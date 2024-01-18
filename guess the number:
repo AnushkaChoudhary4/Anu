@@ -1,0 +1,53 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPsPktmIEZvMAULAZhGfox/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/guess%20the%20number%3A\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 39,
+      "metadata": {
+        "id": "S4lY5Fepq6Wz"
+      },
+      "outputs": [],
+      "source": [
+        "import random\n",
+        "def guess_the_no():\n",
+        "  no=random.randint(1,1000)\n",
+        "  while True:\n",
+        "   user_guess=int(input(\"enter\"))\n",
+        "   if user_guess==no:\n",
+        "    print(\"equal to number\")\n",
+        "    break\n",
+        "   elif user_guess<no:\n",
+        "    print(\"smaller then mumber\")\n",
+        "   else:\n",
+        "    print(\"greater then number\")\n",
+        "  guess_the_no(\"betweeen 1 to 1000\")"
+      ]
+    }
+  ]
+}

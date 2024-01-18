@@ -1,0 +1,66 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNbMTKJhic4lL0vsBBwYHLX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/guess%20the%20no.%20in%20right%20way\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S4lY5Fepq6Wz",
+        "outputId": "61ecd3fb-454e-43bc-a9ac-59b5e3eb8ab4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter34\n",
+            "smaller then number\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "def guess_the_no():\n",
+        "  no=random.randint(1,1000)\n",
+        "  while True:\n",
+        "   user_guess=int(input(\"enter\"))\n",
+        "   if user_guess==no:\n",
+        "    print(\"equal to number\")\n",
+        "    break\n",
+        "   elif user_guess<no:\n",
+        "    print(\"smaller then number\")\n",
+        "   else:\n",
+        "    print(\"greater then number\")\n",
+        "guess_the_no()"
+      ]
+    }
+  ]
+}

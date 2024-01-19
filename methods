@@ -1,0 +1,375 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNrYKHoSwi5mFFmAu2M2yjP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/methods\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 49,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fRiSRHbl0FXZ",
+        "outputId": "592443f0-a20e-4e90-9d10-692c6f8f0e01"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "your bmi is:22.857142857142858\n"
+          ]
+        }
+      ],
+      "source": [
+        "def calculate_bmi(weight_kg,height_m):\n",
+        "  bmi=weight_kg/(height_m**2)\n",
+        "  return bmi\n",
+        "weight=70\n",
+        "height=1.75\n",
+        "result=calculate_bmi(weight,height)\n",
+        "print(f\"your bmi is:{result}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"mynameisanu\"\n",
+        "print(str[0:5])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zxHD87-O1OLK",
+        "outputId": "8bc4b894-8155-4616-af40-54b1c7f40a9a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mynam\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"ANU\"\n",
+        "str.lower()\n",
+        "print(str.lower())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K4LNXUvJ2SDa",
+        "outputId": "e821d2b9-e9be-4eb6-aa0e-6c2931d3a2f3"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "anu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"anu\"\n",
+        "str.upper()\n",
+        "print(str.upper())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CjWwnpKl2qUn",
+        "outputId": "3299263d-c25e-4c7b-d430-92588c923c22"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ANU\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"anushka  \"\n",
+        "print(str.strip())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AkRtT_rs3Vhe",
+        "outputId": "71bd76fd-3972-4475-99c3-fd2ed4d222f9"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "anushka\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"anushka  \"\n",
+        "print(len(str))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "E_c4IWoL3t1O",
+        "outputId": "f1dfb6cc-aa5b-456c-f84a-c52b65665dd2"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"  anushka\"\n",
+        "print(str.strip())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f1Da0Ir64EgI",
+        "outputId": "12df9a87-18c5-43cf-98f8-4ad42c585a3d"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "anushka\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"anushka\"\n",
+        "print(str.replace(\"anushka\",\"anu\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YClO-z4x5YW6",
+        "outputId": "7bd439f1-f368-4cd8-952a-7e485d398880"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "anu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"my name is anu anu\"\n",
+        "print(str.count(\"anu\"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C9djEW7m6Yp3",
+        "outputId": "0ec36908-fba1-4b55-df90-078beb6b5b8e"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=input(\"enter the strimg:\")\n",
+        "print(a.count(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6BSHfqkd7JVN",
+        "outputId": "e3cedefa-8ef9-4a14-fd62-591a71453dfc"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the strimg:anushka\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str='my name is anushka'\n",
+        "print(str.find(\"name\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JpDYItAT8Qvd",
+        "outputId": "922e725e-4974-4554-ac5f-ef49691d53bc"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=input(\"enter the string\")\n",
+        "print(str.find(\"a\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PTicPA6a8xcM",
+        "outputId": "3fe8b949-2b14-4c3a-d044-7c89efe190d9"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the stringanushka\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"my name is {}\"\n",
+        "print(str.format(\"anushka\"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GE3xAXZM9Xsc",
+        "outputId": "46c341e0-5da6-4a0a-a0a1-a9212ab636f7"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my name is anushka\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"my {} is {} choudhary {}\"\n",
+        "print(str.format(\"name\",\"anushka\",\"bca\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7TujDf0X-xKC",
+        "outputId": "c1e42450-21f7-4426-e607-a60250419f23"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my name is anushka choudhary bca\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

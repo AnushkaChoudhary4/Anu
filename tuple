@@ -1,0 +1,169 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNJQe5ini8DJaPEbm/fVvkr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/tuple\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vdeE10eMkukB",
+        "outputId": "0982e277-be68-4dc7-83fc-06b7419a7420"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('a', 'n', 'u', 's', 'h', 'k', 'a')\n"
+          ]
+        }
+      ],
+      "source": [
+        "tuple_result=tuple('anushka')\n",
+        "print(tuple_result)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tuple_result=('anushka')\n",
+        "print(tuple_result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "azngcLAimgWN",
+        "outputId": "e901ca7d-69a8-4a55-999d-30dd470d36e6"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "anushka\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup=('anushka','anu')\n",
+        "del tup\n",
+        "print(\"after deleting\")\n",
+        "print(\"anu\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ADqmcVT8n4YN",
+        "outputId": "5f8275ad-abee-4e90-c98c-ff284b9be9bf"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "after deleting\n",
+            "anu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tuple=(0,1,2,3)\n",
+        "print(\"original tuple\",tuple)\n",
+        "mylist=list(tuple)\n",
+        "print(\"covert tuple to list\",mylist)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tle4PkYlqj17",
+        "outputId": "9346adaf-8434-4d6f-b877-005c8757623b"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "original tuple (0, 1, 2, 3)\n",
+            "covert tuple to list [0, 1, 2, 3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits=(\"apple\",\"grapes\",\"apple\",\"grapes\",\"mango\")\n",
+        "res=[]\n",
+        "for j in range(len(fruits)):\n",
+        "  my_fruit=fruits[j]\n",
+        "  count=0\n",
+        "  for i in range(len(fruits)):\n",
+        "    if i==j:\n",
+        "      continue\n",
+        "    if fruits[i]==fruits[j]:\n",
+        "      count+=1\n",
+        "  if count>0:\n",
+        "    if my_fruit not in res:\n",
+        "      res.append(my_fruit)\n",
+        "print(res)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MMeHRYpxsVDr",
+        "outputId": "76df115d-3ee5-404c-9b1e-4f48d58bcd95"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'grapes']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

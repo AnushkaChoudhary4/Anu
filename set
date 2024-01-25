@@ -1,0 +1,439 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPrHAfdC/hCi+94qbLbkHN0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/set\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-3kFXJZxt-bP",
+        "outputId": "f5bc794a-ff63-47c1-c650-b8d9550ecd9e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple', 'banana', 'grapes'}\n"
+          ]
+        }
+      ],
+      "source": [
+        "set={\"apple\",\"banana\",\"grapes\"}\n",
+        "print(set)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\",\"grapes\"}\n",
+        "print(type(set))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JZf3cdZCvc-A",
+        "outputId": "615ce44a-724e-4417-fc9b-543f95c1b2cc"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'set'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set.add(\"mango\")\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PXptIGWRvtv8",
+        "outputId": "44da3882-8cef-4570-cdda-d9445ed49ac7"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'mango', 'apple', 'banana'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "for i in set:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uc5KdYUPwR6f",
+        "outputId": "09180adc-a2a7-4dd4-ba0f-5f50a8bbd8a2"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "apple\n",
+            "banana\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\",\"mango\"}\n",
+        "set.remove(\"banana\")\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Jcb90x-RwmLc",
+        "outputId": "e8519d30-417a-474d-fd27-712595814e86"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'mango', 'apple'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set.add(\"apple\")\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bPzF46Tuw8KD",
+        "outputId": "6d7c1b41-f55f-4e1e-9f21-752aec5cec44"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple', 'banana'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set1={\"mango\"}\n",
+        "set.update(set1)\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-kZH33B0xVyy",
+        "outputId": "f47aa816-e857-47db-e809-68578cfba738"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'mango', 'apple', 'banana'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "print(set)\n",
+        "mylist=list[set]\n",
+        "print(mylist)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9dg9g1H0x9uE",
+        "outputId": "6a32324b-c6e9-43b0-a78c-87a4773c895d"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple', 'banana'}\n",
+            "list[{'apple', 'banana'}]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set.remove(\"mango\")\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 210
+        },
+        "id": "DZw7R1CNy2zn",
+        "outputId": "07828619-fd61-4b36-c834-9b717227b043"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyError",
+          "evalue": "'mango'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-16-75324b3607b2>\u001b[0m in \u001b[0;36m<cell line: 2>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mset\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m{\u001b[0m\u001b[0;34m\"apple\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\"banana\"\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mset\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mremove\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"mango\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mset\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyError\u001b[0m: 'mango'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set.discard(\"mango\")\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u1lB9fYMzFOf",
+        "outputId": "800aca5e-b055-4db5-85b8-a0ec550c76ea"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple', 'banana'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set.discard(\"banana\")\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l096s33ZyjBA",
+        "outputId": "98c90ad6-fa63-4669-c3ba-7ad25ac310cb"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\",\"mango\"}\n",
+        "if \"grapes\" in set:\n",
+        "  remove\n",
+        "  print(set)"
+      ],
+      "metadata": {
+        "id": "LleVxI8rz1fr"
+      },
+      "execution_count": 19,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\",\"mango\"}\n",
+        "set.pop()\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Nze4MfOl0Pyt",
+        "outputId": "4ae057b3-a936-4601-f0d8-4a49b2423f60"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple', 'banana'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\",\"mango\"}\n",
+        "set.push()\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "id": "vGEicC-h0z2-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set.clear()\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvM5rFrD1YKe",
+        "outputId": "eb4df719-caf3-4883-9deb-35581379ce18"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "set()\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "print(id(set))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XKV0pQFd1veq",
+        "outputId": "ed86c63d-3a48-40cb-fb79-38897dd9d8e2"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "139604172471232\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set={\"apple\",\"banana\"}\n",
+        "set1={\"mango\"}\n",
+        "set.intersection_update()\n",
+        "print(set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "twxriAXm2xsB",
+        "outputId": "15d3011f-04fd-45dc-da41-ef36aac8621a"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'apple', 'banana'}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

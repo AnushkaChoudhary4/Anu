@@ -1,0 +1,128 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMgpzG6y5QVjfpliNIPu2W8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/open%20file\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oKJ9Mcvmd5jH",
+        "outputId": "b9890ea9-7765-4a21-811b-9de9e38345d7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "s=\"anushka\"\n",
+        "str=s.isalpha()\n",
+        "print(str)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f= open(\"python.py\")\n",
+        "print(f)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lvPEwwFWgsuG",
+        "outputId": "165d5a71-0b1b-4511-882f-ae691145b486"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<_io.TextIOWrapper name='python.py' mode='r' encoding='UTF-8'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f= open(\"name.txt\",\"rt\")\n",
+        "for x in f:\n",
+        "  print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U8yDCWf3iNiA",
+        "outputId": "03d40d2e-bfd1-4e78-d27e-5c79b2147cf5"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A new line.A second new line.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f= open(\"name.txt\",\"rt\")\n",
+        "print(f.readline())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WKty-OO2kHwM",
+        "outputId": "4fd42e2b-49b7-4204-d01c-5bdec0ce3d2c"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A new line.A second new line.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

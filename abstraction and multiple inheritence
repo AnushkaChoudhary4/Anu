@@ -1,0 +1,111 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNZ7owG6vpMrpr80DA/UJBC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnushkaChoudhary4/Anu/blob/main/abstraction%20and%20multiple%20inheritence\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hy1i-3Ue9SSu",
+        "outputId": "b33f3b67-710c-4c75-c223-277889c10515"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The mileage is 30kmph\n",
+            "The mileage is 27kmph \n"
+          ]
+        }
+      ],
+      "source": [
+        "from abc import ABC, abstractmethod\n",
+        "class Car(ABC):\n",
+        "    def mileage(self):\n",
+        "        pass\n",
+        "class Tesla(Car):\n",
+        "    def mileage(self):\n",
+        "        print(\"The mileage is 30kmph\")\n",
+        "\n",
+        "class Renault(Car):\n",
+        "    def mileage(self):\n",
+        "            print(\"The mileage is 27kmph \")\n",
+        "t= Tesla ()\n",
+        "t.mileage()\n",
+        "r = Renault()\n",
+        "r.mileage()\n",
+        "\n",
+        "\n",
+        "\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Class1:\n",
+        "\tdef m(self):\n",
+        "\t\tprint(\"In Class1\")\n",
+        "\n",
+        "class Class2(Class1):\n",
+        "\tdef m(self):\n",
+        "\t\tprint(\"In Class2\")\n",
+        "\n",
+        "class Class3(Class1):\n",
+        "\tdef m(self):\n",
+        "\t\tprint(\"In Class3\")\n",
+        "\n",
+        "class Class4(Class2, Class3):\n",
+        "\tpass\n",
+        "\n",
+        "obj = Class4()\n",
+        "obj.m()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IY3_QJviADJj",
+        "outputId": "ba2e3754-c020-4600-ca87-f3fdc7fc957a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "In Class2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
